@@ -1,74 +1,97 @@
 .address-modal-container {
-  position: fixed;
-  inset: 0;
-  z-index: 6;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin: auto;
+	position: fixed;
+	inset: 0;
+	z-index: 6;
+	background-color: rgba(0, 0, 0, 0.2);
+	margin: auto;
 }
 
 .address-modal-container .address-input-container {
-  position: absolute;
-  inset: 0;
-  background-color: rgb(255, 255, 255);
-  margin: auto;
-  width: 290px;
-  height: 520px;
-  text-align: center;
-  border-radius: 10px;
+	position: absolute;
+	inset: 0;
+	background-color: rgb(255, 255, 255);
+	margin: auto;
+	width: 290px;
+	height: max-content;
+	text-align: center;
+	border-radius: 10px;
+	border: none !important;
 }
 
 .address-input-container h1 {
-  margin-top: 25px;
-  color: rgb(33, 33, 33);
-  margin-bottom: 25px;
+	margin-top: 25px;
+	color: rgb(33, 33, 33);
+	margin-bottom: 25px;
 }
 
 .address-modal-container .address-input-container input {
-  padding: 8px 16px;
-  display: block;
-  width: 90%;
-  margin: 12px auto;
-  border: 1px solid rgb(226, 226, 226);
-  border-radius: 5px;
+	padding: 8px 16px;
+	display: block;
+	width: 90%;
+	margin: 12px auto;
+	border: 1px solid rgb(226, 226, 226);
+	border-radius: 5px;
 }
 
 .address-modal-container .submit {
-  color: white;
-  background-color: var(--primary-color);
-  font-weight: 600;
-  display: inline;
+	color: white;
+	background-color: var(--primary-color);
+	font-weight: 600;
+	display: inline;
 }
 
 .address-modal-container .submit:hover {
-  cursor: pointer;
-  background-color: black;
+	cursor: pointer;
+	background-color: black;
 }
-.address-modal-container .btn-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
+.address-modal-container{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px 20px 20px;
 }
 
 .address-modal-container .btn-container button {
-  border: none;
-  padding: 8px 16px;
-
-  border-radius: 5px;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
 }
 
-.address-modal-container .btn-container button:hover {
-  cursor: pointer;
-  background-color: var(--secondary-background-color-onhover);
+
+
+.address-modal-container button:hover {
+	cursor: pointer;
+	background-color: var(--secondary-background-color-onhover);
+}
+
+.btn-container button {
+  background-color: rgb(195, 195, 195);
+}
+
+.btn-container button:hover{
+  background-color: rgb(159, 159, 159);
 }
 
 .address-modal-container .btn-container button:last-child {
-  flex-grow: 1;
-  margin-left: 10px;
+	flex-grow: 1;
+	margin-left: 10px;
 }
 
 @media (min-width: 768px) {
-  .address-modal-container .address-input-container{
-    width: 390px;
-  }
+	.address-modal-container .address-input-container {
+		width: 390px;
+	}
+}
 
+.input-fields {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
